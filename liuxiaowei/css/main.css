@@ -1,0 +1,476 @@
+        @charset "utf-8";
+        /* CSS Document */
+        
+        body {
+            /* overflow-x: hidden; */
+        }
+        
+        #topbg {
+            background: #f5f5f5;
+            height: 40px;
+        }
+        
+        #top {
+            margin: 0 auto;
+            width: 1090px;
+            height: 40px;
+            background: #f5f5f5;
+            position: relative;
+        }
+        
+        #top a:hover {
+            color: #f34017;
+            text-decoration: underline;
+        }
+        
+        #topleft {
+            float: left;
+            font: 15px/40px "";
+        }
+        
+        #topleft a {
+            text-decoration: none;
+        }
+        
+        #topright {
+            float: right;
+            font: 15px/40px "";
+        }
+        
+        #topright i {
+            background: url(../images/main.png) no-repeat;
+        }
+        
+        #topright .toprighti1 {
+            display: block;
+            width: 18px;
+            height: 15px;
+            background-position: -1px 0;
+            margin-top: 14px;
+        }
+        
+        #topright .toprighti2 {
+            display: block;
+            width: 13px;
+            height: 14px;
+            background-position: -16px -1px;
+            margin-top: 14px;
+            float: right;
+        }
+        
+        #topright a {
+            float: left;
+            margin: 0 9px;
+            text-decoration: none;
+        }
+        
+        #topright span {
+            float: left;
+        }
+        
+        #topright a i {
+            float: left;
+        }
+        
+        #top .top1 {
+            position: absolute;
+            top: 0;
+            left: 997px;
+            z-index: 2;
+            border: 1px solid #ccc;
+            border-top: none;
+            width: 90px;
+            background-color: #fff;
+            text-align: left;
+            display: none;
+            overflow: hidden;
+        }
+        
+        #top .mask {
+            position: absolute;
+            top: 0;
+            left: 997px;
+            z-index: 3;
+            width: 90px;
+            height: 90px;
+            display: block;
+        }
+        
+        #top .twocode {
+            position: absolute;
+            top: 43px;
+            left: 700px;
+            display: none;
+        }
+        
+        .top1 .top12 {
+            font: 10px/25px "";
+            text-align: center;
+            height: 25px;
+        }
+        
+        #top .top1 .top11 {
+            text-decoration: underline;
+            height: 40px;
+            font: 15px/40px "";
+            text-align: center;
+            color: #f34017;
+            width: 96px;
+        }
+        
+        #headerbg {
+            height: 133px;
+        }
+        
+        .header {
+            height: 133px;
+            width: 1090px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .header .logo {
+            width: 306px;
+            height: 76px;
+            background: url(../images/logo.png) no-repeat;
+            margin: 30px 0 0 12px;
+            float: left;
+        }
+        
+        .header input.search {
+            width: 421px;
+            height: 35px;
+            border-radius: 13px 0 0 13px;
+            border: 2px solid #f34017;
+            text-indent: 20px;
+            float: left;
+        }
+        
+        .header .searchsub {
+            width: 74px;
+            height: 39px;
+            background: #f34017;
+            border-radius: 0 13px 13px 0;
+            float: left;
+            border: 0;
+            cursor: pointer;
+        }
+        
+        #headerbg .header form {
+            width: 499px;
+            overflow: hidden;
+            margin: 49px 0 0 110px;
+            float: left;
+        }
+        
+        #headerbg .header form lable {
+            font: 10px/26px "";
+        }
+        
+        #headerbg .header form lable .active {
+            color: #f34017;
+        }
+        
+        #headerbg .header form lable span {
+            margin: 0 3px;
+        }
+        
+        #headerbg .header .shop {
+            width: 116px;
+            height: 44px;
+            border: 2px solid #f34017;
+            float: left;
+            margin: 49px 0 0 42px;
+            border-radius: 19px;
+            font: 14px/44px "";
+            text-indent: 3px;
+        }
+        
+        #headerbg .header .shop .shopbg {
+            display: block;
+            background: url(../images/main.png) no-repeat;
+            background-position: -1px -19px;
+            width: 19px;
+            height: 19px;
+            margin: 11px 0 0 30px;
+            float: left;
+        }
+        
+        #table {
+            height: 40px;
+            width: 1090px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        #table .classification {
+            background: #f34017;
+            width: 170px;
+            height: 42px;
+            font: 16px/42px "";
+            color: #fff;
+            float: left;
+        }
+        
+        #table .classification .fication1 {
+            float: left;
+            width: 21px;
+            height: 19px;
+            background: url(../images/main.png) -20px -22px;
+            margin: 11px 20px;
+        }
+        
+        #table .table {
+            float: left;
+            overflow: hidden;
+            margin-left: 62px;
+        }
+        
+        #table .table .nav {
+            padding: 0 62px 0 0;
+            float: left;
+            font: 18px/42px "";
+        }
+        
+        .box {
+            width: 100%;
+            height: 402px;
+            position: relative;
+            margin: 20px auto 0;
+            overflow: hidden;
+        }
+        
+        .banner2 {
+            height: 402px;
+        }
+        
+        .imgbox {
+            width: 100%;
+            height: 402px;
+        }
+        
+        .imgbox img {
+            width: 100%;
+            height: 402px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .btns {}
+        
+        .btns input {
+            width: 10px;
+            height: 50px;
+            border: none;
+            background: rgba(200, 200, 200, 0.6);
+            top: 100px;
+            position: absolute;
+        }
+        
+        #left {
+            left: 0;
+        }
+        
+        #right {
+            right: 0;
+        }
+        
+        .TVbg {
+            height: 358px;
+            background: #f3f3f3;
+            width: 100%;
+        }
+        
+        .TVbg .TV {
+            width: 1090px;
+            padding-top: 30px;
+            margin: 0 auto;
+            /* overflow: hidden; */
+            position: relative;
+            height: 329px;
+        }
+        
+        .TVbg .TV .TVleft {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+            border: 0;
+            background: #fff;
+            left: -100px;
+            top: 204px;
+        }
+        
+        .TVbg .TV .TVright {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+            border: 0;
+            background: #fff;
+            right: -100px;
+            top: 204px;
+        }
+        
+        .TVtitle {
+            overflow: hidden;
+            height: 44px;
+        }
+        
+        .TVtitle .h3 {
+            float: left;
+            padding: 0 10px;
+            width: 79px;
+            font: 22px/44px "";
+        }
+        
+        .TVtitle .span {
+            float: left;
+            display: block;
+            font: 12px/44px "";
+        }
+        
+        .TVtitle .h4 {
+            float: right;
+            width: 110px;
+            height: 30px;
+            border: 2px solid #e2000e;
+            font: 14px/30px solid;
+            border-radius: 13px;
+            text-align: center;
+        }
+        
+        .TVbg .TV .TVbannerborder {
+            width: 1090px;
+            overflow: hidden;
+            height: 286px;
+            position: absolute;
+            top: 74px;
+        }
+        
+        .TVbg .TV .TVbanner {
+            height: 286px;
+            position: absolute;
+            top: 0px;
+        }
+        
+        .TVbg .TVmain {
+            width: 357px;
+            height: 286px;
+            margin-right: 12px;
+            background: #fff;
+            float: left;
+        }
+        
+        .TVbg .TVmain .status {
+            width: 68px;
+            height: 24px;
+            background: url(../images/smallclick1.png) no-repeat;
+            float: left;
+            background-size: 68px 24px;
+        }
+        
+        .TVbg .TVmain .TVpic {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background: url(https://ecimg.happigo.com/data/upload/shop/store/goods/1/487/259487/1_main_259487_360.jpg) no-repeat;
+            background-size: 200px 200px;
+        }
+        
+        .TVmain:hover .TVpic {
+            transform: scale(1.1, 1.1);
+        }
+        
+        .TVbg .TVmain .TVbottom {
+            height: 86px;
+        }
+        
+        .TVbg .TVmain .TVbottom .item {
+            font: 16px/40px "";
+        }
+        
+        .TVbg .TVmain .TVbottom .price {
+            float: left;
+            font: 20px/20px "";
+            color: red;
+            width: 75px;
+            height: 24px;
+        }
+        
+        .TVbg .TVmain .TVbottom .originprice {
+            width: 50px;
+            float: left;
+            text-decoration: line-through;
+            padding-top: 5px;
+            font: 14px/14px "";
+        }
+        
+        .TVbg .TVmain .TVbottom .addshop {
+            float: right;
+            width: 83px;
+            height: 30px;
+            font: 16px/32px "";
+            border-radius: 15px;
+            background: orange;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        .showbg {
+            height: 482px;
+            background: #f3f3f3;
+        }
+        
+        .show {
+            width: 1090px;
+            margin: 0 auto;
+            padding-top: 30px;
+            height: 452px;
+        }
+        
+        .show .showa {
+            width: 120%;
+            height: 384px;
+        }
+        
+        .showmain {
+            background: #fff;
+            width: 266px;
+            height: 384px;
+            float: left;
+            margin-right: 16px;
+        }
+        
+        .showpic {
+            width: 266px;
+            height: 266px;
+            background: url(https://ecimg.happigo.com/data/upload/shop/store/goods/1/103/271603/1_main_271603_360.jpg);
+            background-size: 266px 266px;
+        }
+        
+        .showmain .showbottom .showitem1 {
+            font: 12px/32px "";
+            color: #6b6e65;
+        }
+        
+        .showmain .showbottom .showitem2 {
+            font: 14px/14px "";
+            color: #000;
+        }
+        
+        .showmain .showbottom .showprice {
+            font: 20px/54px "";
+            float: left;
+            margin-right: 10px;
+            color: red;
+        }
+        
+        .showmain .showbottom .shpworiginprice {
+            font: 14px/14px "";
+            float: left;
+            text-decoration: line-through;
+            margin-top: 22px;
+        }
