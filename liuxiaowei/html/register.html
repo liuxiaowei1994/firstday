@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>快乐购</title>
-    <link rel="stylesheet" href="../css/public.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/menu.css" />
-    <link rel="stylesheet" href="../css/list.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/register.css">
 </head>
 
 <body>
+    <script src="../js/jquery.js"></script>
     <div class="up">
         <div id="topbg">
             <div id="top">
@@ -85,35 +87,32 @@
 
         </div>
     </div>
-    <div class="listtitle">
-        <a href="../main.html" class="clickhome">首页</a>
-        <span class="clickhomejiantou">></span>
-        <a href="#" class="listtitlemask">个护美妆</a>
-    </div>
-    <div class="mainlistall">
-        <a href="itemas.html">
-            <div class="mainlist">
-                <div class="mainlista">
-                    <div class="mainlistaimg"></div>
-                    <div class="mainlistbottoma">
-                        <span class="price">￥169</span>
-                        <span class="originprice">￥300</span>
-                    </div>
-                    <p class="items">京城之霜精粹焕采纤颜面膜10片装</p>
-                </div>
+
+    <!-- 注册 -->
+    <section id="register" class="margin">
+        <span class="jump">
+            <a href="../index.html">首页</a>
+            <b>&gt;</b>
+            <a href="login.html">登陆</a>
+        </span>
+        <div class="cont clear">
+            <div class="register">
+                <i>手机注册</i>
+                <p><label>邮箱/手机</label><input type="text" class="user"></p>
+                <p><label>密码</label><input type="password" class="pass"></p>
+                <p><label>确认密码</label><input type="password" class="pass2"></p>
+                <input type="button" value="立即注册" name="" class="btn">
+                <span><a href="login.html">立即登陆</a><b>已注册？</b></span>
             </div>
-        </a>
-    </div>
+            <img src="https://ecimg.happigo.com/data/upload/shop/store/goods/1/484/255484/1_main_255484_360.jpg" class="cont-r" alt="">
+        </div>
+        <div class="mask">注册成功！</div>
+    </section>
 
 
-
-
-
-    <script src="../js/jquery.js"></script>
-    <script src="../js/list.js"></script>
-
-    <script src="../js/cookie.js"></script>
 
 </body>
+
+<script src="../js/register.js"></script>
 
 </html>
