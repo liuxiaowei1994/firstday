@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.listtitle {
+    width: 1090px;
+    margin: 0 auto;
+    height: 57px;
+    line-height: 57px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    .clickhome,
+    .listtitlemask,
+    .clickhomejiantou {
+        font: 14px/56px ""
+    }
+}
+
+$widthmax:1090px;
+.mainlistall {
+    width: $widthmax;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.mainlist {
+    margin: 0 auto;
+    height: auto;
+    width: 120%;
+    overflow: hidden;
+}
+
+.mainlista {
+    border: 1px solid #ccc;
+    height: 360px;
+    width: 261px;
+    float: left;
+    margin: 0 10px 10px 0;
+    .mainlistaimg {
+        width: 261px;
+        height: 261px;
+        background-size: 261px 261px;
+        background-image: url(https://ecimg.happigo.com/data/upload/shop/store/goods/1/436/272936/1_main_272936_360.jpg);
+    }
+    .mainlistbottoma {
+        width: 291px;
+        height: 30px;
+        margin-top: 5px;
+        overflow: hidden;
+        .price {
+            color: #DF0010;
+            font-size: 20px;
+            height: 22px;
+            float: left;
+        }
+        .originprice {
+            display: block;
+            font-size: 14px;
+            text-decoration: line-through;
+            width: 34px;
+            height: 16px;
+            float: left;
+            margin: 8px 0 0 5px;
+        }
+    }
+    .items {
+        font: 14px/32px "";
+    }
+}
