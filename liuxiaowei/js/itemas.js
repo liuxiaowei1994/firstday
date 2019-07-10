@@ -10,7 +10,7 @@
             this.xiang = document.querySelector("#infor .xiang");
             this.url = "http://localhost:8181/data/list.json";
             this.init();
-            // this.addEvent();
+            this.addEvent();
             // this.addEvent2();
             this.toitemas = JSON.parse(getCookie("goodsmessage"));
 
@@ -34,7 +34,7 @@
                 let str = "";
                 let str2 = "";
                 let str1 = "";
-                console.log(this.toitemas)
+
                 for (var i = 0; i < this.res.length; i++) {
                     if (this.res[i].id == this.toitemas.id) {
                         // 正常图片
@@ -60,7 +60,7 @@
                 // 获取已经渲染的数据
                 this.span = document.querySelector(".kong");
                 this.bImg = this.bBox.children[0];
-                console.log(this.bImg.style)
+
                 this.init1();
 
             }
@@ -73,8 +73,8 @@
                 // console.log(this.span)
                 that.span.className = "active";
                 that.bBox.style.display = "block";
-                console.log(that.bBox)
-                    // 移动             this == that.sBox
+
+                // 移动             this == that.sBox
                 this.onmousemove = function(eve) {
                     var e = eve || window.event;
                     // e.pageX - this.offsetLeft === e.offsetX
@@ -122,46 +122,46 @@
                 this.bImg.style.top = -y * (this.bImg.offsetHeight - this.bBox.offsetHeight) + "px";
             }
             // 购物功能：点击购物车，数量增加
-            // addEvent() {
-            //     var that = this;
-            //     this.xiang.addEventListener("click", function(eve) {
-            //         var e = eve || window.event;
-            //         var target = e.target || e.srcElement;
-            //         if (target.className == "tocar") {
-            //             // console.log(target)
-            //             that.id = that.goods[0].id;
-            //             that.setData();
-            //         }
-            //     })
-            // }
+        addEvent() {
+            var that = this;
+            this.xiang.addEventListener("click", function(eve) {
+                var e = eve || window.event;
+                var target = e.target || e.srcElement;
+                if (target.className == "tocar") {
+                    // console.log(target)
+                    that.id = that.toitemas.id;
+                    that.setData();
+                }
+            })
+        }
 
         // 设置localStorage
-        // setData() {
-        //     this.good = localStorage.getItem("shangpin");
-        //     if (this.good) {
-        //         this.good = JSON.parse(this.good);
-        //         var onoff = true;
-        //         for (var i = 0; i < this.good.length; i++) {
-        //             if (this.id == this.good[i].id) {
-        //                 // console.log(this.id);
-        //                 this.good[i].num++;
-        //                 onoff = false;
-        //             }
-        //         }
-        //         if (onoff) {
-        //             this.good.push({
-        //                 id: this.id,
-        //                 num: 1
-        //             })
-        //         }
-        //     } else {
-        //         this.good = [{
-        //             id: this.id,
-        //             num: 1
-        //         }]
-        //     }
-        //     localStorage.setItem("shangpin", JSON.stringify(this.good));
-        // }
+        setData() {
+            this.good = localStorage.getItem("shangpin");
+            if (this.good) {
+                this.good = JSON.parse(this.good);
+                var onoff = true;
+                for (var i = 0; i < this.good.length; i++) {
+                    if (this.id == this.good[i].id) {
+                        console.log(this.good.length);
+                        this.good[i].num++;
+                        onoff = false;
+                    }
+                }
+                if (onoff) {
+                    this.good.push({
+                        id: this.id,
+                        num: 1
+                    })
+                }
+            } else {
+                this.good = [{
+                    id: this.id,
+                    num: 1
+                }]
+            }
+            localStorage.setItem("shangpin", JSON.stringify(this.good));
+        }
 
         // addEvent2() {
 
