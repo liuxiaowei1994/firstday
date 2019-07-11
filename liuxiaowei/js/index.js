@@ -46,16 +46,17 @@
                 this.seMenu.addEventListener("mouseover", (eve) => {
                     let e = eve || window.event;
                     let target = e.target || e.srcElement;
+
                     for (let i = 0; i < that.ali.length; i++) {
                         that.ali[i].className = "";
                     }
-                    if (target.nodeName == "LI" || "SPAN") {
+                    if (target.nodeName == "LI" || "a") {
                         if (target.nodeName == "LI") {
                             target.className = "active";
                             this.liIndex = target.index;
 
                         }
-                        if (target.nodeName == "SPAN" && target.nodeName != "LI" && target.nodeName != "UL") {
+                        if (target.nodeName == "a" && target.nodeName != "LI" && target.nodeName != "UL") {
                             target.parentNode.className = "active";
                             this.liIndex = target.parentNode.index;
                         }

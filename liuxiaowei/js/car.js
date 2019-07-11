@@ -30,9 +30,7 @@ class Car {
         // 渲染页面
     display() {
             var str = "";
-            var str2 = "";
-            this.ssum = [];
-            this.money = 0;
+
 
             for (var i = 0; i < this.res.length; i++) {
                 for (var z = 0; z < this.goods.length; z++) {
@@ -56,7 +54,7 @@ class Car {
                 }
             }
             this.tbody.innerHTML = str;
-            // this.payfor.innerHTML = str;
+
         }
         // 添加事件委托
     addEvent() {
@@ -70,16 +68,7 @@ class Car {
                     that.removeStorage();
                 }
             })
-            this.tbody.addEventListener("input", function(eve) {
-                var e = eve || window.event;
-                var target = e.target || e.srcElement;
-                if (target.className == "number") {
-                    that.id = target.parentNode.parentNode.getAttribute("index");
-                    that.num = target.value;
-                    that.change();
 
-                }
-            })
         }
         // 删除
     removeStorage() {

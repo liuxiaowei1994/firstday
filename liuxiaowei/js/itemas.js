@@ -11,7 +11,7 @@
             this.url = "http://localhost:8181/data/list.json";
             this.init();
             this.addEvent();
-            // this.addEvent2();
+            this.addEvent2();
             this.toitemas = JSON.parse(getCookie("goodsmessage"));
 
         }
@@ -47,7 +47,7 @@
                                     <span>${this.res[i].pricea}</span>
                                     <input type="button" value="立即购买" class="buy">
                                     <input type="button" value="加入购物车" class="tocar"><br>
-                                    <a href="../goodlist/goodlist.html">继续购物>></a>`;
+                                    <a href="list.html">继续购物>></a>`;
 
                     }
                 }
@@ -163,16 +163,16 @@
             localStorage.setItem("shangpin", JSON.stringify(this.good));
         }
 
-        // addEvent2() {
+        addEvent2() {
 
-        //     this.xiang.addEventListener("click", function(eve) {
-        //         var e = eve || window.event;
-        //         var target = e.target || e.srcElement;
-        //         if (target.className == "buy") {
-        //             window.location.href = "http://localhost/ztt/goods/function/car/car.html";
-        //         }
-        //     })
-        // }
+            this.xiang.addEventListener("click", function(eve) {
+                var e = eve || window.event;
+                var target = e.target || e.srcElement;
+                if (target.className == "buy") {
+                    window.location.href = "http://localhost:8181/html/car.html";
+                }
+            })
+        }
 
     }
 
