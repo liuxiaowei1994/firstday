@@ -85,7 +85,6 @@
 
             this.tvMargin = computedStyle.marginRight;
             this.tvBanner.style.width = (this.tvMain.offsetWidth + 12) * this.res.length + "px";
-            console.log(this.tvBanner.style.width)
             this.select()
         }
         select() {
@@ -138,19 +137,14 @@
             var that = this;
             console.log(999);
             $.ajax({
-                    url: this.url,
-                    success: function(res) {
-                        that.res = res;
-                        that.display();
+                url: this.url,
+                success: function(res) {
+                    that.res = res;
+                    that.display();
 
-                    }
-                })
-                // ajaxPost(this.url, function(res) {
-                //     console.log(res)
-                //     that.res = JSON.parse(res)
-                //     that.display();
+                }
+            })
 
-            // })
         }
         display() {
             var str = "";

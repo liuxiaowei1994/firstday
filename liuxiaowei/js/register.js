@@ -47,13 +47,15 @@
                 // 不是第一次注册，如果不是第一次注册，需要判断这次注册的和之前注册的是否重名，如果重名，不执行
                 for (var i = 0; i < this.data.length; i++) {
                     if (this.data[i].user === this.user.value) {
+
+
+                        this.mask.style.display = "block";
+                        this.mask.innerHTML = "用户名已经存在！";
+                        setTimeout(() => {
+                            this.mask.style.display = "none";
+                        }, 1000);
                         return;
                     }
-                    this.mask.style.display = "block";
-                    this.mask.innerHTML = "用户名已经存在！";
-                    setTimeout(() => {
-                        this.mask.style.display = "none";
-                    }, 1000);
                 }
                 // 如果执行了，表示没重名，那就再增加一个
                 this.data.push({

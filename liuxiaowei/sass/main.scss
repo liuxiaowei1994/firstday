@@ -520,3 +520,29 @@
             text-decoration: line-through;
             margin-top: 22px;
         }
+        
+        #floor {
+            width: 1090px;
+            margin: 0 auto;
+            height: 280px;
+            background: url(https://ecimg.happigo.com/data/upload/app/adsession/2019/8/06158928062427269.jpg);
+            background-size: 1090px 280px;
+        }
+        
+        .search-res {
+            position: absolute;
+            top: 125px;
+            left: 562px;
+            width: 480px;
+            border: 1px solid #b6b6b6;
+            border-top: none;
+            background: #fff;
+            z-index: 6;
+        }
+        
+        .search-res li {
+            list-style-type: none;
+            line-height: 20px;
+            padding: 2px 5px;
+            border-bottom: 1px solid #b6b6b6;
+        }
