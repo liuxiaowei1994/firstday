@@ -238,7 +238,8 @@
         }
         
         .navlist li {
-            font: 12px/32px "";
+            font: 12px/40px "";
+            text-align: center;
         }
         
         .active {
@@ -247,9 +248,8 @@
         
         .tablelxw .tab .third {
             width: 616px;
-            height: 400px;
+            height: 300px;
             border: 1px solid #f34017;
-            ;
             background: rgba(255, 255, 255, 0.8);
             position: absolute;
             top: 45px;
@@ -259,6 +259,7 @@
             border-top: none;
             display: none;
             z-index: 4;
+            overflow-y: scroll;
         }
         
         .tablelxw .tab .third .thirdCont {
@@ -266,7 +267,19 @@
         }
         
         .tablelxw .tab .third .thirdCont p {
+            height: auto;
+            overflow: hidden;
+        }
+        
+        .tablelxw .tab .third .thirdCont p a {
             float: left;
+            font: 16px/20px "";
+            margin: 0 5px;
+        }
+        
+        .tablelxw .tab .third .thirdCont p span {
+            float: left;
+            font: 16px/20px "";
         }
         
         .nav-r {

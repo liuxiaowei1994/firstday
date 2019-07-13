@@ -1,0 +1,52 @@
+1.文件夹布局：
+
+    server 为服务器根目录   liuxiaowei为源文件
+
+     （1）文件布局大概介绍    main.html为首页
+                              css为所有页面的css
+                              js为所有js文件
+                              html为首页之外的所有html 文件
+      (2)公用文件：main1.js  头部文件
+                   cookie.js
+                   index.js  三级菜单
+                   jquery.js
+                   jsonp.js
+       (3)内部介绍：首页：    main.html  main1.js   main2.js   main.css
+                    商品列表：list.html  list.js   list.scss 
+                    商品详情：itemas.html   itemas.js   itemas.css
+                    登录：     login.html   login.js     login.css
+                    注册：    register.html   register.js     register.css
+                    购物车：   car.html    car.js   car.css
+        (4)data:    购物车    list.json    
+                    三级列表  good.json
+                    商品详情  list.json
+                    商品列表  list.json   
+                    首页 小轮播 TV.json
+                    首页  下部渲染 show.json
+
+
+
+2.页面跳转按钮：
+        1.点击table 部分   首页       跳转到首页
+        2.点击tableb 部分  所有分类   跳转到商品列表
+        3.点击 商品列表    图片部分   跳转到商品详情页
+        4.点击  商品详情页 加入购物车 和 立即购买  跳转到购物车页面
+        5.点击  商品详情页 继续购物    跳转到 商品列表页
+        4.点击top(顶部)     登录       跳转到登陆页面
+        5.点击top(顶部)     免费注册   跳转到注册页面
+        6.点击搜索框右侧    购物车      跳转到购物车页面
+
+3.项目用技术
+      1.原生js
+      2.jquery ajax 请求数据
+      3.商品列表跳转到商品详情页 使用cookie储存数据
+      4.购物车  使用localstorage存储数据
+4.效果 
+     首页:   三级菜单  大轮播图 小轮播图（点击左右按钮图片更换） 搜索框 （输入内容出现下拉框）
+     商品详情: 放大镜 table切换
+5.github:    https://github.com/liuxiaowei1994/firstday.git
+
+              
+
+  
+
